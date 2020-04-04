@@ -1,0 +1,54 @@
+#contenedor{
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: 50px 170px auto 40px;
+    background-color: #CCE5FF;
+    width : 600px;
+    height: 800px;
+    border-radius: 5%;
+    
+}
+
+.dispit{
+    margin-right:  10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#display{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+    justify-items: right;
+
+    
+}
+
+#contBotones{
+    margin-top: 40px;
+    grid-column:2 /3;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-rows: repeat(5,auto);
+    grid-template-columns: repeat(4,auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    width: 0 auto;
+    height: auto;
+
+    
+
+}
+
+.btn{
+    border-radius: 10%;
+    border-color: transparent;
+    width: 100px;
+    height: 80px;
+    outline: none;
+    font-size: large;
+
+}
