@@ -25,7 +25,9 @@ let ceButton = document.querySelector("#CE");
 ceButton.addEventListener("click", () => clearError());
 
 function clearError(){
-    mainScreen.textContent ="";
+   
+    primerNumero ="";
+    mainScreen.textContent = primerNumero;
 }
 
 
@@ -145,6 +147,23 @@ function allClear(){
 let acButton = document.querySelector('#AC');
 acButton.addEventListener("click",() => allClear());
 
+let decButton =document.querySelector("#dec");
+decButton.addEventListener("click" ,()  => addDecimal());
+
+function addDecimal(){
+    console.log("check")
+    let hasDec = false;
+    if (primerNumero.includes(".")){
+        hasDec = true;
+        }
+    
+    if(!hasDec){
+        primerNumero += ".";
+        mainScreen.textContent = primerNumero;   
+
+    }
+    hasDec = false;
+}
 
 
 
