@@ -38,8 +38,17 @@ function inputNum(num){
         listo = false;
     }
 
-    primerNumero += num;
-    mainScreen.textContent = primerNumero;
+    if(primerNumero.length<13){
+        if(primerNumero.includes(".")){
+            if((primerNumero.length - primerNumero.indexOf(".")<3)){
+                primerNumero += num;
+                mainScreen.textContent = primerNumero;
+            }
+        }else{
+        primerNumero += num;
+        mainScreen.textContent = primerNumero;
+        }
+    }
 }
 
 function setSeg(op){
